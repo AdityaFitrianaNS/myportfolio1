@@ -16,25 +16,30 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 const sr = ScrollReveal ({
-    distance: '60px',
+    distance: '30px',
     duration: 2500,
-    delay:400,
+    delay: 400,
     reset: true
 })
 
-sr.reveal('.home-text',{delay:200, origin:'top'})
-sr.reveal('.home-img',{delay:300, origin:'top'})
-sr.reveal('.about-tittle , .information, .about-text , .about, .about-img , .services, .heading , .services-content , .skills, .skill-container, .portfolio, .box, input, textarea, .social a',{delay:200, origin:'top'})
+sr.reveal('.about-tittle , .home-text, .home-img, .information, .about-text , .wrapper, .dynamic-text, .static-text , .about, .about-img , .services, .heading , .services-content , .skill, .skill-container, .portfolio, .box, input, textarea, .social a',
+{
+    delay: 200,
+    origin:'top', 
+    reset: true
+})
 
-// Dark Mode
-let darkmode = document.querySelector('#darkmode');
+// Green Mode
+let greenmode = document.querySelector('#greenmode');
  
-darkmode.onclick = () => {
-    if(darkmode.classList.contains('bx-moon')){
-        darkmode.classList.replace('bx-moon','bx-sun');
+greenmode.onclick = () => {
+    if(greenmode.classList.contains('bx-moon')){
+        greenmode.classList.replace('bx-moon','bx-sun');
         document.body.classList.add('active');
     }else{
-        darkmode.classList.replace('bx-sun','bx-moon');
+        greenmode.classList.replace('bx-sun','bx-moon');
         document.body.classList.remove('active');
     }
 }
+
+
