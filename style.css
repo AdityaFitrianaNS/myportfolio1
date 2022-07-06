@@ -644,6 +644,10 @@
     .btn {
       font-size: 16px;
     }
+    .projects-container {
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+    }
     .preloader {
       padding: 350px 0px 0px 0px;
     }
@@ -839,6 +843,8 @@
       height: 128px;
     }
     .projects-container {
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(1, auto);
       gap: 14px;
     }
     .projects-container .box {
