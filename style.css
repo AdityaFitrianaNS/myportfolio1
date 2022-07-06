@@ -436,8 +436,10 @@
   }
   .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
-    gap: 19px;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 3fr));
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 16px;
     margin-top: 50px;
   }
   .projects-container .box {
@@ -486,7 +488,7 @@
   }
   .projects-container .box:hover .content{
       top: 0;
-      transition: 0.2s;
+      transition: 0.4s;
   }
   .contact {
     padding: 110px;
@@ -614,15 +616,15 @@
     section {
       padding: 100px 12%;
     }
+    .preloader {
+      padding: 140px;
+    }
     .about .heading {
       margin-top: -30px;
     }
     .skill {
       margin-top: -100px;
       text-align: center;
-    }
-    .preloader {
-      padding: 140px;
     }
     .services .heading {
       margin-top: 0px;
